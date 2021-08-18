@@ -1,9 +1,4 @@
-.expo/
-.expo-shared/
 .vscode-test/
-out/
 dist/
-test-fixtures/
 node_modules/
-build
-public
+build/
