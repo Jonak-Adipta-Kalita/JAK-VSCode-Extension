@@ -10,15 +10,20 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:jak-vscode-extension.helloWorld"
+		"onCommand:jak-vscode-extension.openJAKWebsite",
+		"onCommand:jak-vscode-extension.openJAKAPI"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "jak-vscode-extension.openJAKGithub",
-				"title": "Open JAK's Github"
-			}
+				"command": "jak-vscode-extension.openJAKWebsite",
+				"title": "Open JAK's Website"
+			},
+            {
+                "command": "jak-vscode-extension.openJAKAPI",
+				"title": "Open JAK's API"
+            }
 		]
 	},
 	"scripts": {
