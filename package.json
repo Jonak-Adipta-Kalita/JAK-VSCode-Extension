@@ -1,8 +1,13 @@
 {
     "name": "jak-vscode-extension",
+    "publisher": "JAKVSCodeExtension",
     "displayName": "jak-vscode-extension",
     "description": "A VSCode Extension made by JAK",
     "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Jonak-Adipta-Kalita/JAK-VSCode-Extension.git"
+    },
     "engines": {
         "vscode": "^1.46.0"
     },
