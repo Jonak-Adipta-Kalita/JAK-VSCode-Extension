@@ -2,6 +2,11 @@
 
 # JAK-VSCode-Extension
 
+![Version](https://vsmarketplacebadge.apphb.com/version-short/JAKVSCodeExtension.jak-vscode-extension.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=VERSION)
+![Rating](https://vsmarketplacebadge.apphb.com/rating-short/JAKVSCodeExtension.jak-vscode-extension.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=Rating)
+![Installs](https://vsmarketplacebadge.apphb.com/installs-short/JAKVSCodeExtension.jak-vscode-extension.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=Installs)
+![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/JAKVSCodeExtension.jak-vscode-extension.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=Downloads)
+
 </div>
 
 [Install](https://marketplace.visualstudio.com/items?itemName=JAKVSCodeExtension.jak-vscode-extension)
