@@ -1,5 +1,5 @@
 <div align='center'>
 
-# JAKVSCode-Extension
+# JAK-VSCode-Extension
 
 </div>
