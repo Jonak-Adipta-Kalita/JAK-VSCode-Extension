@@ -3,7 +3,7 @@
     "publisher": "JAKVSCodeExtension",
     "displayName": "JAK VSCode Extension",
     "description": "A VSCode Extension made by JAK",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Jonak-Adipta-Kalita/JAK-VSCode-Extension.git"
