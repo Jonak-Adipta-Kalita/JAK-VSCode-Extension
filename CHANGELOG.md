@@ -28,3 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 0.0.4
 
 -   Added Logo to the Extension
+
+## 0.0.5
+
+-   Implemented Side Panel

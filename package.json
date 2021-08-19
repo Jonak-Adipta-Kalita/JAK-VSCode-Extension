@@ -4,7 +4,7 @@
     "displayName": "JAK VSCode Extension",
     "description": "A VSCode Extension made by JAK",
     "icon": "assets/logo.png",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Jonak-Adipta-Kalita/JAK-VSCode-Extension.git"
@@ -18,10 +18,31 @@
     "activationEvents": [
         "onCommand:jak-vscode-extension.openJAKWebsite",
         "onCommand:jak-vscode-extension.openJAKAPI",
-        "onCommand:jak-vscode-extension.openJAKDiscordBot"
+        "onCommand:jak-vscode-extension.openJAKDiscordBot",
+        "onView:jak-vscode-extension-sidebar"
     ],
     "main": "./dist/extension.js",
     "contributes": {
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "jak-vscode-extension-sidebar",
+                    "title": "JAK VSCode Extension",
+                    "icon": "assets/sidebar/logo.svg"
+                }
+            ]
+        },
+        "views": {
+            "jak-vscode-extension-sidebar": [
+                {
+                    "type": "webview",
+                    "id": "jak-vscode-extension-sidebar",
+                    "name": "JAK VSCode Extension",
+                    "icon": "assets/sidebar/logo.svg",
+                    "contextualTitle": "JAK VSCode Extension"
+                }
+            ]
+        },
         "commands": [
             {
                 "command": "jak-vscode-extension.openJAKWebsite",
