@@ -78,6 +78,10 @@
         "prettier:fix": "prettier --write **/*.{js,ts,md}",
         "prepare": "husky install"
     },
+	"bugs": {
+        "url": "https://github.com/Jonak-Adipta-Kalita/JAK-VSCode-Extension/issues"
+    },
+    "homepage": "https://github.com/Jonak-Adipta-Kalita/JAK-VSCode-Extension#readme",
     "devDependencies": {
         "@rollup/plugin-commonjs": "^20.0.0",
         "@rollup/plugin-node-resolve": "^13.0.4",
