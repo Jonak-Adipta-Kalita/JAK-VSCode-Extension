@@ -1,5 +1,7 @@
 {
     "name": "jak-vscode-extension",
+	"author": "Jonak Adipta Kalita",
+	"license": "MIT",
     "publisher": "JAKVSCodeExtension",
     "displayName": "JAK VSCode Extension",
     "description": "A VSCode Extension made by JAK",
