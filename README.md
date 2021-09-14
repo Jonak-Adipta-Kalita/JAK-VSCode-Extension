@@ -6,6 +6,7 @@
 ![Rating](https://vsmarketplacebadge.apphb.com/rating-short/JAKVSCodeExtension.jak-vscode-extension.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=Rating)
 ![Installs](https://vsmarketplacebadge.apphb.com/installs-short/JAKVSCodeExtension.jak-vscode-extension.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=Installs)
 ![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/JAKVSCodeExtension.jak-vscode-extension.svg?style=for-the-badge&colorA=252526&colorB=43A047&label=Downloads)
+![License](https://img.shields.io/github/license/Jonak-Adipta-Kalita/JAK-VSCode-Extension?style=for-the-badge)
 ![GitHub Repo Stars](https://img.shields.io/github/stars/Jonak-Adipta-Kalita/JAK-VSCode-Extension?style=for-the-badge)
 ![GitHub Forks](https://img.shields.io/github/forks/Jonak-Adipta-Kalita/JAK-VSCode-Extension?style=for-the-badge)
 ![GitHub Watchers](https://img.shields.io/github/watchers/Jonak-Adipta-Kalita/JAK-VSCode-Extension?style=for-the-badge)
