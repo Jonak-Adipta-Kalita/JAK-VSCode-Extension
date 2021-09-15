@@ -40,3 +40,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 0.0.7
 
 -   Solving the Sidebar Panel not showing issue
+
+## 0.0.8
+
+-   Changed Logo
