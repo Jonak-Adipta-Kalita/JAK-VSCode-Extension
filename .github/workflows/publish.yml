@@ -10,10 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - run: npm install
+      - uses: lannonbr/vsce-action@master
         with:
-          node-version: 12
-      - run: yarn
-      - uses: sigma/vsce-publish-action@v0.0.2
-        with:
-            vsce_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          args: "publish -p $VSCE_TOKEN"
+        env:
+          VSCE_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
