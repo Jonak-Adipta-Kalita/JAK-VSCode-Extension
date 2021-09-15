@@ -14,8 +14,6 @@ jobs:
         with:
           node-version: 12
       - run: yarn
-      - name: Publish to Visual Studio Marketplace
-        uses: HaaLeo/publish-vscode-extension@v0
+      - uses: sigma/vsce-publish-action@v0.0.2
         with:
-          pat: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          registryUrl: https://marketplace.visualstudio.com
+            vsce_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
