@@ -77,8 +77,8 @@
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
         "test": "node ./out/test/runTest.js",
-        "prettier": "prettier **/*.{js,ts,md}",
-        "prettier:fix": "prettier --write **/*.{js,ts,md}",
+        "prettier": "prettier **/*.{js,ts,md,json}",
+        "prettier:fix": "prettier --write **/*.{js,ts,md,json}",
         "prepare": "husky install"
     },
     "bugs": {
