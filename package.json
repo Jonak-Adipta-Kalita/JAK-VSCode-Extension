@@ -96,7 +96,7 @@
         "@types/vscode": "^1.60.0",
         "@typescript-eslint/parser": "^4.32.0",
         "@typescript-eslint/eslint-plugin": "^4.32.0",
-        "concurrently": "^6.2.1",
+        "concurrently": "^6.2.2",
         "eslint": "^7.32.0",
         "glob": "^7.1.6",
         "husky": "^7.0.2",
