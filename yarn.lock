@@ -2446,10 +2446,10 @@ supports-color@^7.0.0, supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-svelte-check@^2.2.6:
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/svelte-check/-/svelte-check-2.2.6.tgz#11d5e70225a616950eddd3d435d56193be687582"
-  integrity sha512-oJux/afbmcZO+N+ADXB88h6XANLie8Y2rh2qBlhgfkpr2c3t/q/T0w2JWrHqagaDL8zeNwO8a8RVFBkrRox8gg==
+svelte-check@^2.2.8:
+  version "2.2.8"
+  resolved "https://registry.yarnpkg.com/svelte-check/-/svelte-check-2.2.8.tgz#776befcfbfaad93f38642724619a400846a04923"
+  integrity sha512-y8BmSf3v+jOoVwKY0K3wAiIt3hupLiUS4HYqXSZPXJZrChKddp+N8fyNeClsDChLt2sLUo6sOAhlnok/RJ+iIw==
   dependencies:
     chalk "^4.0.0"
     chokidar "^3.4.1"
@@ -2728,10 +2728,10 @@ webpack-sources@^3.2.0:
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-3.2.0.tgz#b16973bcf844ebcdb3afde32eda1c04d0b90f89d"
   integrity sha512-fahN08Et7P9trej8xz/Z7eRu8ltyiygEo/hnRi9KqBUs80KeDcnf96ZJo++ewWd84fEf3xSX9bp4ZS9hbw0OBw==
 
-webpack@^5.59.0:
-  version "5.59.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.59.0.tgz#a5038fc0d4d9350ee528e7e1e0282080c63efcf5"
-  integrity sha512-2HiFHKnWIb/cBfOfgssQn8XIRvntISXiz//F1q1+hKMs+uzC1zlVCJZEP7XqI1wzrDyc/ZdB4G+MYtz5biJxCA==
+webpack@^5.59.1:
+  version "5.61.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.61.0.tgz#fa827f0ee9bdfd141dd73c3e891e955ebd52fe7f"
+  integrity sha512-fPdTuaYZ/GMGFm4WrPi2KRCqS1vDp773kj9S0iI5Uc//5cszsFEDgHNaX4Rj1vobUiU1dFIV3mA9k1eHeluFpw==
   dependencies:
     "@types/eslint-scope" "^3.7.0"
     "@types/estree" "^0.0.50"
