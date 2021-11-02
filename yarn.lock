@@ -2651,10 +2651,10 @@ v8-compile-cache@^2.0.3:
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
   integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
 
-vsce@^1.99.0:
-  version "1.99.0"
-  resolved "https://registry.yarnpkg.com/vsce/-/vsce-1.99.0.tgz#ae27e32cb16a4eaa38adf431003f75c7ef0fefdc"
-  integrity sha512-fyzOLcmcgBmA+CYg0NyYU3JMmcOBcf94ZzZZYi83mIoXBRU391mYByoJEPnkl8xZGa3/OW5lH438/JOThlYPNA==
+vsce@^1.102.0:
+  version "1.102.0"
+  resolved "https://registry.yarnpkg.com/vsce/-/vsce-1.102.0.tgz#177f449025754989fa8a38f080b40b79a8b945b4"
+  integrity sha512-fICfop2CvO4AwdkWmJyjxJSQoIJ0ke9owwBhvtQpXvgcH4kW0uV9jwdNviOEy0QYlhM3sAZJkf3/Nta3UPWvKQ==
   dependencies:
     azure-devops-node-api "^11.0.1"
     chalk "^2.4.2"
@@ -2728,10 +2728,10 @@ webpack-sources@^3.2.0:
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-3.2.0.tgz#b16973bcf844ebcdb3afde32eda1c04d0b90f89d"
   integrity sha512-fahN08Et7P9trej8xz/Z7eRu8ltyiygEo/hnRi9KqBUs80KeDcnf96ZJo++ewWd84fEf3xSX9bp4ZS9hbw0OBw==
 
-webpack@^5.59.0:
-  version "5.59.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.59.0.tgz#a5038fc0d4d9350ee528e7e1e0282080c63efcf5"
-  integrity sha512-2HiFHKnWIb/cBfOfgssQn8XIRvntISXiz//F1q1+hKMs+uzC1zlVCJZEP7XqI1wzrDyc/ZdB4G+MYtz5biJxCA==
+webpack@^5.59.1:
+  version "5.61.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.61.0.tgz#fa827f0ee9bdfd141dd73c3e891e955ebd52fe7f"
+  integrity sha512-fPdTuaYZ/GMGFm4WrPi2KRCqS1vDp773kj9S0iI5Uc//5cszsFEDgHNaX4Rj1vobUiU1dFIV3mA9k1eHeluFpw==
   dependencies:
     "@types/eslint-scope" "^3.7.0"
     "@types/estree" "^0.0.50"
