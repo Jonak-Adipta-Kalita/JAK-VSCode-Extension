@@ -79,6 +79,7 @@
         "test": "node ./out/test/runTest.js",
         "prettier": "prettier **/*.{js,ts,md,json}",
         "prettier:fix": "prettier --write **/*.{js,ts,md,json}",
+		"format": "eslint --fix . && prettier --write **/*.{js,ts,md,json}",
         "prepare": "husky install"
     },
     "bugs": {
