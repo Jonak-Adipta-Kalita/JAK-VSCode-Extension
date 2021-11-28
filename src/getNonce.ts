@@ -1,4 +1,4 @@
-export const getNonce = () => {
+const getNonce = () => {
     let text = "";
     const possible =
         "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -7,3 +7,5 @@ export const getNonce = () => {
     }
     return text;
 };
+
+export default getNonce;
