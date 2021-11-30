@@ -1,10 +1,5 @@
 import { ExtensionContext, window } from "vscode";
-import {
-    openJAKWebsite,
-    openJAKAPI,
-    openJAKDiscordBot,
-    refreshExtension,
-} from "./functions";
+import { refreshExtension } from "./functions";
 import { SidebarProvider } from "./SidebarProvider";
 
 export function activate(context: ExtensionContext) {
@@ -15,11 +10,5 @@ export function activate(context: ExtensionContext) {
         sidebarProvider
     );
 
-    context.subscriptions.push(
-        sidebar,
-        refreshExtension,
-        openJAKWebsite,
-        openJAKAPI,
-        openJAKDiscordBot
-    );
+    context.subscriptions.push(sidebar, refreshExtension);
 }

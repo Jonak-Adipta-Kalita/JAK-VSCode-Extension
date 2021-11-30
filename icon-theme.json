@@ -1,0 +1,10 @@
+{
+    "iconDefinitions": {
+        "_jak_file": {
+            "iconPath": "./media/logo.png"
+        }
+    },
+    "fileExtensions": {
+        "jonak": "_jak_file"
+    }
+}

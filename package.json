@@ -6,7 +6,7 @@
     "displayName": "JAK VSCode Extension",
     "description": "A VSCode Extension made by JAK",
     "icon": "media/logo.png",
-    "version": "0.0.8",
+    "version": "1.0.0",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Jonak-Adipta-Kalita/JAK-VSCode-Extension.git"
@@ -19,9 +19,6 @@
     ],
     "activationEvents": [
         "onCommand:jak-vscode-extension.refreshExtension",
-        "onCommand:jak-vscode-extension.openJAKWebsite",
-        "onCommand:jak-vscode-extension.openJAKAPI",
-        "onCommand:jak-vscode-extension.openJAKDiscordBot",
         "onView:jak-vscode-extension-sidebar"
     ],
     "main": "./dist/extension.js",
@@ -50,18 +47,13 @@
             {
                 "command": "jak-vscode-extension.refreshExtension",
                 "title": "Refresh JAK VSCode Extension"
-            },
+            }
+        ],
+        "iconThemes": [
             {
-                "command": "jak-vscode-extension.openJAKWebsite",
-                "title": "Open JAK's Website"
-            },
-            {
-                "command": "jak-vscode-extension.openJAKAPI",
-                "title": "Open JAK's API"
-            },
-            {
-                "command": "jak-vscode-extension.openJAKDiscordBot",
-                "title": "Open JAK's Discord Bot Invite"
+                "id": "jonak",
+                "label": "JAK Programming Language",
+                "path": "./icon-theme.json"
             }
         ]
     },
@@ -77,9 +69,9 @@
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
         "test": "node ./out/test/runTest.js",
-        "prettier": "prettier **/*.{js,ts,md,json}",
-        "prettier:fix": "prettier --write **/*.{js,ts,md,json}",
-        "format": "eslint --fix . && prettier --write **/*.{js,ts,md,json}",
+        "prettier": "prettier **/*.{ts,md,json}",
+        "prettier:fix": "prettier --write **/*.{ts,md,json}",
+        "format": "eslint --fix . && prettier --write **/*.{ts,md,json}",
         "check:version": "ncu",
         "prepare": "husky install"
     },
@@ -88,10 +80,10 @@
     },
     "homepage": "https://github.com/Jonak-Adipta-Kalita/JAK-VSCode-Extension#readme",
     "devDependencies": {
-        "@rollup/plugin-commonjs": "^20.0.0",
-        "@rollup/plugin-node-resolve": "^13.0.4",
-        "@rollup/plugin-typescript": "^8.2.5",
-        "@tsconfig/svelte": "^2.0.1",
+        "@rollup/plugin-commonjs": "^17.0.0",
+        "@rollup/plugin-node-resolve": "^11.0.1",
+        "@rollup/plugin-typescript": "^8.1.0",
+        "@tsconfig/svelte": "^1.0.10",
         "@types/glob": "^7.2.0",
         "@types/mocha": "^9.0.0",
         "@types/node": "^16.11.1",
@@ -105,12 +97,12 @@
         "mocha": "^9.1.3",
         "npm-check-updates": "^12.0.2",
         "prettier": "2.4.1",
-        "rollup": "^2.56.3",
-        "rollup-plugin-svelte": "^7.1.0",
+        "rollup": "^2.3.4",
+        "rollup-plugin-svelte": "^6.0.0",
         "rollup-plugin-terser": "^7.0.2",
-        "svelte": "^3.42.6",
-        "svelte-check": "^2.2.6",
-        "svelte-preprocess": "^4.9.4",
+        "svelte": "^3.31.0",
+        "svelte-check": "^1.1.23",
+        "svelte-preprocess": "^4.6.1",
         "ts-loader": "^9.2.6",
         "typescript": "^4.4.4",
         "vsce": "^1.99.0",

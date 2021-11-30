@@ -44,3 +44,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 0.0.8
 
 -   Changed Logo
+
+## 1.0.0
+
+-   Removed Commands: Open JAK's Website, Open JAK's API and Open JAK's Discord Bot Invite
+-   Added Logo for \*.jonak Files
+-   Added Syntax Higlighting for \*.jonak Files

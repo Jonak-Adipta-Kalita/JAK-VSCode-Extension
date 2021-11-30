@@ -48,6 +48,7 @@ This will open a Popup where you can test your Changes.
 ## Technology(s) Used
 
 -   Language: [TypeScript](https://www.typescriptlang.org/)
+-   Frontend Framework: [Svelte](https://svelte.dev/)
 
 ## Contributors
 

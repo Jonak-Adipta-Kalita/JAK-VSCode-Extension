@@ -45,9 +45,8 @@
         <h4>Available Commands:</h4>
         <div>
             <p>1) Refresh JAK VSCode Extension</p>
-            <p>2) Open JAK's Website</p>
-            <p>3) Open JAK's API</p>
-            <p>4) Open JAK's Discord Invite</p>
+            <p>2) Logo for *.jonak Files</p>
+            <p>3) Syntax Highlighting for *.jonak Files</p>
         </div>
     </div>
     <div class="footer">
