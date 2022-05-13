@@ -15,6 +15,7 @@
         "vscode": "^1.46.0"
     },
     "categories": [
+        "Snippets",
         "Other"
     ],
     "activationEvents": [
@@ -47,6 +48,31 @@
             {
                 "command": "jak-vscode-extension.refreshExtension",
                 "title": "Refresh JAK VSCode Extension"
+            }
+        ],
+        "languages": [
+            {
+                "id": "jonak",
+                "extensions": [
+                    ".jonak"
+                ],
+                "aliases": [
+                    "Jonak",
+                    "jonak"
+                ],
+                "filenames": [],
+                "firstLine": "",
+                "configuration": "./src/language-configuration.json",
+                "icon": {
+                    "light": "./media/logo.png",
+                    "dark": "./media/logo.png"
+                }
+            }
+        ],
+        "snippets": [
+            {
+                "language": "jonak",
+                "path": "./src/snippets.json"
             }
         ]
     },

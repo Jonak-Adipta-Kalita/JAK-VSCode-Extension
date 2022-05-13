@@ -1,0 +1,12 @@
+{
+    "Create a Function": {
+        "prefix": "function",
+        "body": ["FUN $1($2)", "    $3"],
+        "description": "Create a Function"
+    },
+
+    "Create a Variable": {
+        "prefix": "variable",
+        "body": ["VAR $1 = $2"]
+    }
+}
