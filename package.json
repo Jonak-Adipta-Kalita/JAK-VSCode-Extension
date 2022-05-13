@@ -80,7 +80,7 @@
             {
                 "language": "jonak",
                 "scopeName": "source.jonak",
-                "path": "./syntaxes/jonak.tmLanguage.json"
+                "path": "./src/syntax.tmLanguage.json"
             }
         ]
     },
