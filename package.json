@@ -15,6 +15,7 @@
         "vscode": "^1.46.0"
     },
     "categories": [
+        "Programming Languages",
         "Snippets",
         "Other"
     ],
@@ -73,6 +74,13 @@
             {
                 "language": "jonak",
                 "path": "./src/snippets.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "jonak",
+                "scopeName": "source.jonak",
+                "path": "./syntaxes/jonak.tmLanguage.json"
             }
         ]
     },

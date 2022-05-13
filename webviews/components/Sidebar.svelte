@@ -42,11 +42,9 @@
         <h3>Made by JAK</h3>
     </div>
     <div class="body">
-        <h4>Available Commands:</h4>
+        <h4>Features:</h4>
         <div>
-            <p>1) Refresh JAK VSCode Extension</p>
-            <p>2) Logo for *.jonak Files</p>
-            <p>3) Syntax Highlighting for *.jonak Files</p>
+            <p>1) Support for *.jonak Files</p>
         </div>
     </div>
     <div class="footer">
