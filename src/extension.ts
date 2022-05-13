@@ -2,7 +2,7 @@ import { ExtensionContext, window } from "vscode";
 import { refreshExtension } from "./functions";
 import { SidebarProvider } from "./SidebarProvider";
 
-export function activate(context: ExtensionContext) {
+export const activate = (context: ExtensionContext) => {
     const sidebarProvider = new SidebarProvider(context.extensionUri);
 
     const sidebar = window.registerWebviewViewProvider(
@@ -11,4 +11,4 @@ export function activate(context: ExtensionContext) {
     );
 
     context.subscriptions.push(sidebar, refreshExtension);
-}
+};

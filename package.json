@@ -48,13 +48,6 @@
                 "command": "jak-vscode-extension.refreshExtension",
                 "title": "Refresh JAK VSCode Extension"
             }
-        ],
-        "iconThemes": [
-            {
-                "id": "jonak",
-                "label": "JAK Programming Language",
-                "path": "./icon-theme.json"
-            }
         ]
     },
     "scripts": {
