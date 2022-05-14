@@ -11,13 +11,7 @@
     "repository": {
         "comments": {
             "name": "comment.line",
-            "begin": "#",
-            "end": "#",
-            "captures": {
-                "0": {
-                    "name": "comment.line"
-                }
-            }
+            "match": "#.*"
         },
         "functions": {
             "match": "FUN|FOR|VAR|LEN|THEN|END|RETURN|PRINT|APPEND|TO",
