@@ -14,7 +14,7 @@
             "match": "#.*"
         },
         "functions": {
-            "match": "FUN|FOR|VAR|LEN|THEN|END|RETURN|PRINT|APPEND|TO",
+            "match": "FUN.*()|FOR|VAR|LEN|THEN|END|RETURN|PRINT|APPEND|TO",
             "name": "entity.name.function"
         },
         "strings": {
