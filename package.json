@@ -12,7 +12,7 @@
         "url": "git+https://github.com/Jonak-Adipta-Kalita/JAK-VSCode-Extension.git"
     },
     "engines": {
-        "vscode": "^1.46.0"
+        "vscode": "^1.61.0"
     },
     "categories": [
         "Programming Languages",
