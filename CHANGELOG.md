@@ -9,13 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 0.0.1
 
-### Added
-
-#### Commands
-
--   Open JAK's Website: Opens JAK's Website in the Web Browser!!
--   Open JAK's API: Opens JAK's API in the Web Browser!!
--   Open JAK's Discord Bot Invite: Opens JAK's Discord Bot Invite Link in the Web Browser!!
+-   Started
 
 ## 0.0.2
 

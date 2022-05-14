@@ -3,7 +3,11 @@
     "name": "jonak",
     "scopeName": "source.jonak",
     "fileTypes": ["jonak"],
-    "patterns": [{ "include": "#comments" }],
+    "patterns": [
+        { "include": "#comments" },
+        { "include": "#functions" },
+        { "include": "#strings" }
+    ],
     "repository": {
         "comments": {
             "name": "comment.line",
@@ -14,6 +18,14 @@
                     "name": "comment.line"
                 }
             }
+        },
+        "functions": {
+            "match": "FUN|FOR|VAR|LEN|THEN|END|RETURN|PRINT|APPEND|TO",
+            "name": "entity.name.function"
+        },
+        "strings": {
+            "match": "\".*\"|'.*'",
+            "name": "string"
         }
     }
 }
