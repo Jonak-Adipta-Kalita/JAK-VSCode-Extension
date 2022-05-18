@@ -43,3 +43,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Removed Commands: Open JAK's Website, Open JAK's API and Open JAK's Discord Bot Invite
 -   Added support for \*.jonak Files
+
+## 1.0.1
+
+-   Trying to Solve the Sidebar Panel and Language Configuration Issue
