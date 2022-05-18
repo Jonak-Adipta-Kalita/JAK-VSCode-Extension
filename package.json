@@ -6,7 +6,7 @@
     "displayName": "JAK VSCode Extension",
     "description": "A VSCode Extension made by JAK",
     "icon": "media/logo.png",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Jonak-Adipta-Kalita/JAK-VSCode-Extension.git"
@@ -63,7 +63,7 @@
                 ],
                 "filenames": [],
                 "firstLine": "",
-                "configuration": "./src/language-configuration.json",
+                "configuration": "./language/language-configuration.json",
                 "icon": {
                     "light": "./media/logo.png",
                     "dark": "./media/logo.png"
@@ -73,14 +73,14 @@
         "snippets": [
             {
                 "language": "jonak",
-                "path": "./src/snippets.json"
+                "path": "./language/snippets.json"
             }
         ],
         "grammars": [
             {
                 "language": "jonak",
                 "scopeName": "source.jonak",
-                "path": "./src/syntax.tmLanguage.json"
+                "path": "./language/syntax.tmLanguage.json"
             }
         ]
     },

@@ -47,3 +47,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 1.0.1
 
 -   Trying to Solve the Sidebar Panel and Language Configuration Issue
+
+## 1.0.2
+
+-   Solved Language Configuration issue
