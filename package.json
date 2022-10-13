@@ -21,7 +21,8 @@
     ],
     "activationEvents": [
         "onCommand:jak-vscode-extension.refreshExtension",
-        "onView:jak-vscode-extension-sidebar"
+        "onView:jak-vscode-extension-sidebar",
+        "onLanguage:jonak"
     ],
     "main": "./dist/extension.js",
     "contributes": {
@@ -82,7 +83,12 @@
                 "scopeName": "source.jonak",
                 "path": "./language/syntax.tmLanguage.json"
             }
-        ]
+        ],
+        "configurationDefaults": {
+            "[jonak]": {
+                "editor.semanticHighlighting.enabled": true
+            }
+        }
     },
     "scripts": {
         "vscode:prepublish": "yarn run package",
