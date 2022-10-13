@@ -24,14 +24,14 @@
         "onView:jak-vscode-extension-sidebar",
         "onLanguage:jonak"
     ],
-    "main": "./dist/extension.js",
+    "main": "./client/dist/extension.js",
     "contributes": {
         "viewsContainers": {
             "activitybar": [
                 {
                     "id": "jak-vscode-extension-sidebar",
                     "title": "JAK VSCode Extension",
-                    "icon": "media/sidebar/logo.svg"
+                    "icon": "client/media/sidebar/logo.svg"
                 }
             ]
         },
@@ -41,7 +41,7 @@
                     "type": "webview",
                     "id": "jak-vscode-extension-sidebar",
                     "name": "JAK VSCode Extension",
-                    "icon": "media/sidebar/logo.svg",
+                    "icon": "client/media/sidebar/logo.svg",
                     "contextualTitle": "JAK VSCode Extension"
                 }
             ]
@@ -64,39 +64,39 @@
                 ],
                 "filenames": [],
                 "firstLine": "",
-                "configuration": "./language/language-configuration.json",
+                "configuration": "./client/language/language-configuration.json",
                 "icon": {
-                    "light": "./media/logo.png",
-                    "dark": "./media/logo.png"
+                    "light": "./client/media/logo.png",
+                    "dark": "./client/media/logo.png"
                 }
             }
         ],
         "snippets": [
             {
                 "language": "jonak",
-                "path": "./language/snippets.json"
+                "path": "./client/language/snippets.json"
             }
         ],
         "grammars": [
             {
                 "language": "jonak",
                 "scopeName": "source.jonak",
-                "path": "./language/syntax.tmLanguage.json"
+                "path": "./client/language/syntax.tmLanguage.json"
             }
         ]
     },
     "scripts": {
         "vscode:prepublish": "yarn run package",
-        "compile": "webpack --config ./build/node-extension.webpack.config.js",
-        "watch": "concurrently \"rollup -c -w\" \"webpack --watch --config ./build/node-extension.webpack.config.js\"",
-        "package": "webpack --mode production --devtool hidden-source-map --config ./build/node-extension.webpack.config.js",
+        "compile": "webpack --config ./client/build/node-extension.webpack.config.js",
+        "watch": "concurrently \"rollup -c -w\" \"webpack --watch --config ./client/build/node-extension.webpack.config.js\"",
+        "package": "webpack --mode production --devtool hidden-source-map --config ./client/build/node-extension.webpack.config.js",
         "test-compile": "tsc -p ./",
         "test-watch": "tsc -watch -p ./",
         "pretest": "yarn run test-compile && yarn run lint",
         "publish:vsce": "vsce publish",
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
-        "test": "node ./out/test/runTest.js",
+        "test": "node ./client/dist/test/runTest.js",
         "prettier": "prettier **/*.{ts,md,json}",
         "prettier:fix": "prettier --write **/*.{ts,md,json}",
         "format": "eslint --fix . && prettier --write **/*.{ts,md,json}",
@@ -115,7 +115,6 @@
         "@types/glob": "^7.2.0",
         "@types/mocha": "^9.0.0",
         "@types/node": "^16.11.1",
-        "@types/vscode": "^1.61.0",
         "@typescript-eslint/eslint-plugin": "^4.33.0",
         "@typescript-eslint/parser": "^4.33.0",
         "concurrently": "^6.3.0",

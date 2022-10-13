@@ -10,16 +10,16 @@ import fs from "fs";
 const production = !process.env.ROLLUP_WATCH;
 
 export default fs
-    .readdirSync(path.join(__dirname, "webviews", "pages"))
+    .readdirSync(path.join(__dirname, "client", "webviews", "pages"))
     .map((input) => {
         const name = input.split(".")[0];
         return {
-            input: "webviews/pages/" + input,
+            input: "client/webviews/pages/" + input,
             output: {
                 sourcemap: true,
                 format: "iife",
                 name: "app",
-                file: "out/compiled/" + name + ".js",
+                file: "client/out/compiled/" + name + ".js",
             },
             plugins: [
                 svelte({
@@ -35,7 +35,7 @@ export default fs
                 }),
                 commonjs(),
                 typescript({
-                    tsconfig: "webviews/tsconfig.json",
+                    tsconfig: "client/webviews/tsconfig.json",
                     sourceMap: !production,
                     inlineSources: !production,
                 }),
