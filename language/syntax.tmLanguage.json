@@ -7,6 +7,7 @@
         { "include": "#comments" },
         { "include": "#functions" },
         { "include": "#keywords" },
+        { "include": "#parameters" },
         { "include": "#strings" }
     ],
     "repository": {
