@@ -15,11 +15,11 @@
             "name": "comment.line"
         },
         "functions": {
-            "match": "LEN|PRINT|APPEND",
+            "match": "LEN|PRINT|APPEND|RUN|IS_NUM|IS_STR|IS_LIST|IS_FUN|EXTEND|POP|PRINT_RET|INPUT|INPUT_INT|CLEAR|CLS",
             "name": "entity.name.function"
         },
         "keywords": {
-            "match": "FUN|VAR|FOR|THEN|END|RETURN|TO",
+            "match": "FUN|VAR|FOR|THEN|END|RETURN|TO|NULL|TRUE|FALSE|MATH_PI|NULL",
             "name": "keyword.control"
         },
         "parameters": {

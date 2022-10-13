@@ -26,9 +26,9 @@
             "end": "^\\s*//\\s*#?endregion\\b"
         }
     },
-    "wordPattern": "(-?\\d*\\.\\d\\w*)|([^\\`\\FUN\\VAR\\FOR\\LEN\\THEN\\END\\RETURN\\PRINT\\APPEND\\TO\\~\\!\\@\\#\\%\\^\\&\\*\\(\\)\\-\\=\\+\\[\\{\\]\\}\\\\\\|\\;\\:\\'\\\"\\,\\.\\<\\>\\/\\?\\s]+)",
+    "wordPattern": "(-?\\d*\\.\\d\\w*)|([^\\`\\FUN\\VAR\\FOR\\LEN\\THEN\\END\\RETURN\\PRINT\\APPEND\\TO\\NULL\\FALSE\\TRUE\\MATH_PI\\PRINT_RET\\INPUT\\INPUT_INT\\CLEAR\\CLS\\IS_NUM\\IS_STR\\IS_LIST\\IS_FUN\\POP\\EXTEND\\RUN\\~\\!\\@\\#\\%\\^\\&\\*\\(\\)\\-\\=\\+\\[\\{\\]\\}\\\\\\|\\;\\:\\'\\\"\\,\\.\\<\\>\\/\\?\\s]+)",
     "indentationRules": {
-        "increaseIndentPattern": "^FUN.*\\)$",
+        "increaseIndentPattern": "^FUN.*\\)$|^.*FOR.*THEN$",
         "decreaseIndentPattern": "^.*RETURN.*$"
     }
 }
