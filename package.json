@@ -83,12 +83,7 @@
                 "scopeName": "source.jonak",
                 "path": "./language/syntax.tmLanguage.json"
             }
-        ],
-        "configurationDefaults": {
-            "[jonak]": {
-                "editor.semanticHighlighting.enabled": true
-            }
-        }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "yarn run package",
