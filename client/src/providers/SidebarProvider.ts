@@ -10,6 +10,8 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
     public resolveWebviewView(webviewView: vscode.WebviewView) {
         this._view = webviewView;
 
+        console.log(this._extensionUri);
+
         webviewView.webview.options = {
             enableScripts: true,
 

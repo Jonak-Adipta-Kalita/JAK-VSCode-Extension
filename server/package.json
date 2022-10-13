@@ -1,0 +1,22 @@
+{
+    "name": "jak-vscode-extension_server",
+    "author": "Jonak Adipta Kalita",
+    "license": "MIT",
+    "publisher": "JAKVSCodeExtension",
+    "description": "A VSCode Extension made by JAK",
+    "version": "1.0.2",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Jonak-Adipta-Kalita/JAK-VSCode-Extension.git"
+    },
+    "engines": {
+        "node": "*"
+    },
+    "bugs": {
+        "url": "https://github.com/Jonak-Adipta-Kalita/JAK-VSCode-Extension/issues"
+    },
+    "homepage": "https://github.com/Jonak-Adipta-Kalita/JAK-VSCode-Extension#readme",
+    "dependencies": {
+        "vscode-languageserver": "^8.0.2"
+    }
+}
