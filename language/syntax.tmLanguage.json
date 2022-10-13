@@ -15,11 +15,11 @@
             "name": "comment.line"
         },
         "functions": {
-            "match": "FUN.*\\(.*\\)|LEN|PRINT|APPEND",
+            "match": "LEN|PRINT|APPEND",
             "name": "entity.name.function"
         },
         "keywords": {
-            "match": "VAR|FOR|THEN|END|RETURN|TO",
+            "match": "FUN|VAR|FOR|THEN|END|RETURN|TO",
             "name": "keyword.control"
         },
         "parameters": {
@@ -27,7 +27,7 @@
             "name": "variable.parameter"
         },
         "strings": {
-            "match": "\".*\"|'.*'",
+            "match": "\".*?\"|'.*?'",
             "name": "string"
         }
     }
