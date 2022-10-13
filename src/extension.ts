@@ -1,13 +1,11 @@
 import * as vscode from "vscode";
 import { refreshExtension } from "./functions";
-import { SidebarProvider } from "./SidebarProvider";
+import { SidebarProvider } from "./providers/SidebarProvider";
 
 export const activate = (context: vscode.ExtensionContext) => {
-    const sidebarProvider = new SidebarProvider(context.extensionUri);
-
     const sidebar = vscode.window.registerWebviewViewProvider(
         "jak-vscode-extension-sidebar",
-        sidebarProvider
+        new SidebarProvider(context.extensionUri)
     );
 
     context.subscriptions.push(sidebar, refreshExtension);
