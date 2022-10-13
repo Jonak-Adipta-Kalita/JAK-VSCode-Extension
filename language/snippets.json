@@ -8,5 +8,10 @@
     "Create a Variable": {
         "prefix": "variable",
         "body": ["VAR $1 = $2"]
+    },
+
+    "Print": {
+        "prefix": "printLine",
+        "body": ["PRINT($1)"]
     }
 }

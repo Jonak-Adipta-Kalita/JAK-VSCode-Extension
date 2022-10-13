@@ -6,16 +6,25 @@
     "patterns": [
         { "include": "#comments" },
         { "include": "#functions" },
+        { "include": "#keywords" },
         { "include": "#strings" }
     ],
     "repository": {
         "comments": {
-            "name": "comment.line",
-            "match": "#.*"
+            "match": "#.*",
+            "name": "comment.line"
         },
         "functions": {
-            "match": "FUN.*()|FOR|VAR|LEN|THEN|END|RETURN|PRINT|APPEND|TO",
+            "match": "FUN.*\\(.*\\)|LEN|PRINT|APPEND",
             "name": "entity.name.function"
+        },
+        "keywords": {
+            "match": "VAR|FOR|THEN|END|RETURN|TO",
+            "name": "keyword.control"
+        },
+        "parameters": {
+            "match": "",
+            "name": "variable.parameter"
         },
         "strings": {
             "match": "\".*\"|'.*'",
