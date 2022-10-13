@@ -50,24 +50,6 @@ const semanticLegend = (() => {
     return new vscode.SemanticTokensLegend(tokenTypesLegend);
 })();
 
-export const activate = (context: vscode.ExtensionContext) => {
-    const sidebarProvider = new SidebarProvider(context.extensionUri);
-
-    const sidebar = vscode.window.registerWebviewViewProvider(
-        "jak-vscode-extension-sidebar",
-        sidebarProvider
-    );
-
-    const semanticHint =
-        vscode.languages.registerDocumentSemanticTokensProvider(
-            { language: "jonak" },
-            new DocumentSemanticTokensProvider(),
-            semanticLegend
-        );
-
-    context.subscriptions.push(sidebar, refreshExtension, semanticHint);
-};
-
 interface IParsedToken {
     line: number;
     startCharacter: number;
@@ -161,3 +143,21 @@ class DocumentSemanticTokensProvider
         };
     }
 }
+
+export const activate = (context: vscode.ExtensionContext) => {
+    const sidebarProvider = new SidebarProvider(context.extensionUri);
+
+    const sidebar = vscode.window.registerWebviewViewProvider(
+        "jak-vscode-extension-sidebar",
+        sidebarProvider
+    );
+
+    const semanticHint =
+        vscode.languages.registerDocumentSemanticTokensProvider(
+            { language: "jonak" },
+            new DocumentSemanticTokensProvider(),
+            semanticLegend
+        );
+
+    context.subscriptions.push(sidebar, refreshExtension, semanticHint);
+};
