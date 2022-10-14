@@ -20,7 +20,7 @@
             "name": "entity.name.function"
         },
         "keywords": {
-            "match": "FUN|VAR|FOR|THEN|END|RETURN|TO|NULL|TRUE|FALSE|MATH_PI|NULL",
+            "match": "FUN|VAR|FOR|THEN|END|RETURN|TO|NULL|TRUE|FALSE|MATH_PI",
             "name": "keyword.control"
         },
         "parameters": {

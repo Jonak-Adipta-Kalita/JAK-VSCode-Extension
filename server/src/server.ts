@@ -13,9 +13,31 @@ import {
 const GRAMMERS: CompletionItem[] = [
     {
         label: "FUN",
-        detail: "Create a Function",
-        kind: CompletionItemKind.Function,
-        documentation: "Create a Function with this keyword",
+        kind: CompletionItemKind.Keyword,
+    },
+    {
+        label: "VAR",
+        kind: CompletionItemKind.Keyword,
+    },
+    {
+        label: "FOR",
+        kind: CompletionItemKind.Keyword,
+    },
+    {
+        label: "MATH_PI",
+        kind: CompletionItemKind.Constant,
+    },
+    {
+        label: "TRUE",
+        kind: CompletionItemKind.Constant,
+    },
+    {
+        label: "FALSE",
+        kind: CompletionItemKind.Constant,
+    },
+    {
+        label: "NULL",
+        kind: CompletionItemKind.Constant,
     },
 ];
 
