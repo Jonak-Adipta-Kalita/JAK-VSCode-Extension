@@ -10,8 +10,6 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
     public resolveWebviewView(webviewView: vscode.WebviewView) {
         this._view = webviewView;
 
-        console.log(this._extensionUri);
-
         webviewView.webview.options = {
             enableScripts: true,
 
@@ -46,11 +44,17 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
 
     private _getHtmlForWebview(webview: vscode.Webview) {
         const styleResetUri = webview.asWebviewUri(
-            vscode.Uri.joinPath(this._extensionUri, "media", "reset.css")
+            vscode.Uri.joinPath(
+                this._extensionUri,
+                "client",
+                "media",
+                "reset.css"
+            )
         );
         const scriptUri = webview.asWebviewUri(
             vscode.Uri.joinPath(
                 this._extensionUri,
+                "client",
                 "out/compiled",
                 "sidebar.js"
             )
@@ -58,12 +62,18 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
         const styleMainUri = webview.asWebviewUri(
             vscode.Uri.joinPath(
                 this._extensionUri,
+                "client",
                 "out/compiled",
                 "sidebar.css"
             )
         );
         const styleVSCodeUri = webview.asWebviewUri(
-            vscode.Uri.joinPath(this._extensionUri, "media", "vscode.css")
+            vscode.Uri.joinPath(
+                this._extensionUri,
+                "client",
+                "media",
+                "vscode.css"
+            )
         );
 
         const nonce = getNonce();
