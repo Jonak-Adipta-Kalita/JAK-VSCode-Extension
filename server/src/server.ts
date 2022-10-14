@@ -134,7 +134,7 @@ connection.onInitialize((params: InitializeParams) => {
     return result;
 });
 
-connection.onInitialized(() => {
+connection.onInitialized((): InitializeResult => {
     if (hasConfigurationCapability) {
         connection.client.register(
             DidChangeConfigurationNotification.type,
@@ -146,10 +146,20 @@ connection.onInitialized(() => {
             connection.console.log("Workspace folder change event received.");
         });
     }
+
+    return {
+        capabilities: {
+            completionProvider: {
+                resolveProvider: true,
+            },
+        },
+    };
 });
 
 connection.onCompletion(
-    (_textDocumentPosition: TextDocumentPositionParams): CompletionItem[] => {
+    (textDocumentPosition: TextDocumentPositionParams): CompletionItem[] => {
+        const document = textDocumentPosition.textDocument.uri;
+
         return GRAMMERS;
     }
 );
