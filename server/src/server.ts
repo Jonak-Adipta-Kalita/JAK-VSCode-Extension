@@ -39,6 +39,66 @@ const GRAMMERS: CompletionItem[] = [
         label: "NULL",
         kind: CompletionItemKind.Constant,
     },
+    {
+        label: "LEN",
+        kind: CompletionItemKind.Function,
+    },
+    {
+        label: "PRINT",
+        kind: CompletionItemKind.Function,
+    },
+    {
+        label: "APPEND",
+        kind: CompletionItemKind.Function,
+    },
+    {
+        label: "RUN",
+        kind: CompletionItemKind.Function,
+    },
+    {
+        label: "IS_NUM",
+        kind: CompletionItemKind.Function,
+    },
+    {
+        label: "IS_STR",
+        kind: CompletionItemKind.Function,
+    },
+    {
+        label: "IS_LIST",
+        kind: CompletionItemKind.Function,
+    },
+    {
+        label: "IS_FUN",
+        kind: CompletionItemKind.Function,
+    },
+    {
+        label: "EXTEND",
+        kind: CompletionItemKind.Function,
+    },
+    {
+        label: "POP",
+        kind: CompletionItemKind.Function,
+    },
+    {
+        label: "PRINT_RET",
+        kind: CompletionItemKind.Function,
+    },
+    {
+        label: "INPUT",
+        kind: CompletionItemKind.Function,
+    },
+    {
+        label: "INPUT_INT",
+        kind: CompletionItemKind.Function,
+    },
+    {
+        label: "CLEAR",
+        kind: CompletionItemKind.Function,
+    },
+    {
+        label: "CLS",
+        kind: CompletionItemKind.Function,
+    },
 ];
 
 const connection = createConnection(ProposedFeatures.all);
