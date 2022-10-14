@@ -10,8 +10,6 @@ import {
     InitializeResult,
 } from "vscode-languageserver/node";
 
-// Create a connection for the server, using Node's IPC as a transport.
-// Also include all preview / proposed LSP features.
 const connection = createConnection(ProposedFeatures.all);
 
 let hasConfigurationCapability = false;
@@ -21,8 +19,6 @@ let hasDiagnosticRelatedInformationCapability = false;
 connection.onInitialize((params: InitializeParams) => {
     const capabilities = params.capabilities;
 
-    // Does the client support the `workspace/configuration` request?
-    // If not, we fall back using global settings.
     hasConfigurationCapability = !!(
         capabilities.workspace && !!capabilities.workspace.configuration
     );
@@ -38,7 +34,6 @@ connection.onInitialize((params: InitializeParams) => {
     const result: InitializeResult = {
         capabilities: {
             textDocumentSync: TextDocumentSyncKind.Incremental,
-            // Tell the client that this server supports code completion.
             completionProvider: {
                 resolveProvider: true,
             },
@@ -56,7 +51,6 @@ connection.onInitialize((params: InitializeParams) => {
 
 connection.onInitialized(() => {
     if (hasConfigurationCapability) {
-        // Register for all configuration changes.
         connection.client.register(
             DidChangeConfigurationNotification.type,
             undefined
@@ -69,27 +63,21 @@ connection.onInitialized(() => {
     }
 });
 
-// The example settings
 interface ExampleSettings {
     maxNumberOfProblems: number;
 }
 
-// The global settings, used when the `workspace/configuration` request is not supported by the client.
-// Please note that this is not the case when using this server with the client provided in this example
-// but could happen with other clients.
 const defaultSettings: ExampleSettings = { maxNumberOfProblems: 1000 };
 let globalSettings: ExampleSettings = defaultSettings;
 
-// Cache the settings of all open documents
 const documentSettings: Map<string, Thenable<ExampleSettings>> = new Map();
 
 connection.onDidChangeConfiguration((change) => {
     if (hasConfigurationCapability) {
-        // Reset all cached document settings
         documentSettings.clear();
     } else {
         globalSettings = <ExampleSettings>(
-            (change.settings.languageServerExample || defaultSettings)
+            (change.settings.jonakLanguageServer || defaultSettings)
         );
     }
 });
@@ -102,7 +90,7 @@ function getDocumentSettings(resource: string): Thenable<ExampleSettings> {
     if (!result) {
         result = connection.workspace.getConfiguration({
             scopeUri: resource,
-            section: "languageServerExample",
+            section: "jonakLanguageServer",
         });
         documentSettings.set(resource, result);
     }
@@ -110,16 +98,11 @@ function getDocumentSettings(resource: string): Thenable<ExampleSettings> {
 }
 
 connection.onDidChangeWatchedFiles((_change) => {
-    // Monitored files have change in VSCode
     connection.console.log("We received an file change event");
 });
 
-// This handler provides the initial list of the completion items.
 connection.onCompletion(
     (_textDocumentPosition: TextDocumentPositionParams): CompletionItem[] => {
-        // The pass parameter contains the position of the text document in
-        // which code complete got requested. For the example we ignore this
-        // info and always provide the same completion items.
         return [
             {
                 label: "TypeScript",
@@ -135,8 +118,6 @@ connection.onCompletion(
     }
 );
 
-// This handler resolves additional information for the item selected in
-// the completion list.
 connection.onCompletionResolve((item: CompletionItem): CompletionItem => {
     if (item.data === 1) {
         item.detail = "TypeScript details";
@@ -148,5 +129,4 @@ connection.onCompletionResolve((item: CompletionItem): CompletionItem => {
     return item;
 });
 
-// Listen on the connection
 connection.listen();
