@@ -19,7 +19,7 @@ export default fs
                 sourcemap: true,
                 format: "iife",
                 name: "app",
-                file: "client/out/compiled/" + name + ".js",
+                file: "client/dist/webviews/" + name + ".js",
             },
             plugins: [
                 svelte({

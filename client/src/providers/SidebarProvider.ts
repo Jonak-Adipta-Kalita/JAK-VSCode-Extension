@@ -55,7 +55,7 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
             vscode.Uri.joinPath(
                 this._extensionUri,
                 "client",
-                "out/compiled",
+                "dist/webviews",
                 "sidebar.js"
             )
         );
@@ -63,7 +63,7 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
             vscode.Uri.joinPath(
                 this._extensionUri,
                 "client",
-                "out/compiled",
+                "dist/webviews",
                 "sidebar.css"
             )
         );
