@@ -36,7 +36,7 @@
         },
         "variables_string": {
             "name": "keyword.control",
-            "match": "\\bVAR\\s+?([A-Za-z]+)\\s+?\\=\\s+?(\".*?\"|'.*?')",
+            "match": "\\s+?\\bVAR\\s+?([A-Za-z]+)\\s+?\\=\\s+?(\".*?\"|'.*?')",
             "captures": {
                 "1": {
                     "name": "variable"
@@ -48,7 +48,7 @@
         },
         "variables_function": {
             "name": "keyword.control",
-            "match": "\\bVAR\\s+?([A-Za-z]+)\\s+?\\=\\s+?([A-Za-z_]+(\\([A-Za-z_,\\s]+\\)))",
+            "match": "\\s+?\\bVAR\\s+?([A-Za-z]+)\\s+?\\=\\s+?([A-Za-z_]+(\\([A-Za-z_,\\s]+\\)))",
             "captures": {
                 "1": {
                     "name": "variable"
