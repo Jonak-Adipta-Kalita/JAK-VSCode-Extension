@@ -8,5 +8,15 @@
     "Create a Variable": {
         "prefix": "variable",
         "body": ["VAR $1 = $2"]
+    },
+
+    "Print": {
+        "prefix": "printLine",
+        "body": ["PRINT($1)"]
+    },
+
+    "For Loop": {
+        "prefix": "forLoop",
+        "body": ["FOR $1 = $2 TO $3 THEN", "    $4", "END"]
     }
 }

@@ -31,17 +31,25 @@ git clone https://github.com/Jonak-Adipta-Kalita/JAK-VSCode-Extension.git
 To install the required modules, just open a terminal in the directory where this project is cloned. Now type:
 
 ```bash
-npm i
+npm i && cd client && npm i && cd .. && cd server && npm i
 # or
-yarn
+yarn && cd client && yarn && cd .. && cd server && yarn
 ```
 
 and hit enter.
 
 ### Test in VSCode
 
-Open the cloned directory in [VSCode](https://code.visualstudio.com/) and press
-`F5` while opening the `src/extension.ts` file.
+Open the cloned directory in [VSCode](https://code.visualstudio.com/).
+In a Terminal, run:
+
+```bash
+npm run watch
+# or
+yarn watch
+```
+
+Now press `F5` while opening the `src/extension.ts` file. and choose `Client + Server`
 
 This will open a Popup where you can test your Changes.
 

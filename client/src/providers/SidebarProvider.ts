@@ -1,5 +1,5 @@
 import * as vscode from "vscode";
-import getNonce from "./getNonce";
+import getNonce from "../getNonce";
 
 export class SidebarProvider implements vscode.WebviewViewProvider {
     _view?: vscode.WebviewView;
@@ -44,24 +44,36 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
 
     private _getHtmlForWebview(webview: vscode.Webview) {
         const styleResetUri = webview.asWebviewUri(
-            vscode.Uri.joinPath(this._extensionUri, "media", "reset.css")
+            vscode.Uri.joinPath(
+                this._extensionUri,
+                "client",
+                "media",
+                "reset.css"
+            )
         );
         const scriptUri = webview.asWebviewUri(
             vscode.Uri.joinPath(
                 this._extensionUri,
-                "out/compiled",
+                "client",
+                "dist/webviews",
                 "sidebar.js"
             )
         );
         const styleMainUri = webview.asWebviewUri(
             vscode.Uri.joinPath(
                 this._extensionUri,
-                "out/compiled",
+                "client",
+                "dist/webviews",
                 "sidebar.css"
             )
         );
         const styleVSCodeUri = webview.asWebviewUri(
-            vscode.Uri.joinPath(this._extensionUri, "media", "vscode.css")
+            vscode.Uri.joinPath(
+                this._extensionUri,
+                "client",
+                "media",
+                "vscode.css"
+            )
         );
 
         const nonce = getNonce();
