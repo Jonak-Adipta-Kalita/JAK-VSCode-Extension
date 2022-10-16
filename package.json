@@ -63,7 +63,7 @@
         "commands": [
             {
                 "command": "jak-vscode-extension.refreshExtension",
-                "title": "Refresh JAK VSCode Extension"
+                "title": "Restart JAK VSCode Extension"
             },
             {
                 "command": "jak-vscode-extension.runJonak",

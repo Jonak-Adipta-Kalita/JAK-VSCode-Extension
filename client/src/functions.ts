@@ -1,14 +1,17 @@
 import { commands, Terminal, Uri, window, workspace } from "vscode";
+import { LanguageClient } from "vscode-languageclient/node";
 
-const refreshExtension = commands.registerCommand(
-    "jak-vscode-extension.refreshExtension",
-    async () => {
-        await commands.executeCommand("workbench.action.closeSidebar");
-        await commands.executeCommand(
-            "workbench.view.extension.jak-vscode-extension-sidebar"
-        );
-    }
-);
+const refreshExtension = (client: LanguageClient) =>
+    commands.registerCommand(
+        "jak-vscode-extension.refreshExtension",
+        async () => {
+            await client.restart();
+            await commands.executeCommand("workbench.action.closeSidebar");
+            await commands.executeCommand(
+                "workbench.view.extension.jak-vscode-extension-sidebar"
+            );
+        }
+    );
 
 const runLanguage = commands.registerCommand(
     "jak-vscode-extension.runJonak",

@@ -47,7 +47,7 @@ export const activate = (context: vscode.ExtensionContext) => {
         new SidebarProvider(context.extensionUri)
     );
 
-    context.subscriptions.push(sidebar, refreshExtension, runLanguage);
+    context.subscriptions.push(sidebar, refreshExtension(client), runLanguage);
 
     client.start();
 };
