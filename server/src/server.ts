@@ -274,12 +274,6 @@ connection.onCompletion(
 );
 
 connection.onCompletionResolve((item: CompletionItem): CompletionItem => {
-    GRAMMERS.map((grammer) => {
-        if (item.label === grammer.label) {
-            item.detail = grammer.detail;
-            item.documentation = grammer.documentation;
-        }
-    });
     return item;
 });
 
