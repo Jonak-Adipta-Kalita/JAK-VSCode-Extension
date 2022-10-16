@@ -6,7 +6,7 @@
     "displayName": "JAK VSCode Extension",
     "description": "A VSCode Extension made by JAK",
     "icon": "media/logo.png",
-    "version": "1.0.2",
+    "version": "2.0.0",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Jonak-Adipta-Kalita/JAK-VSCode-Extension.git"
