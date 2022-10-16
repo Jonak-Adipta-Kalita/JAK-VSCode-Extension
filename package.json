@@ -138,7 +138,7 @@
         "@types/node": "^16.11.1",
         "@typescript-eslint/eslint-plugin": "^4.33.0",
         "@typescript-eslint/parser": "^4.33.0",
-        "concurrently": "^6.3.0",
+        "concurrently": "^7.4.0",
         "eslint": "^7.32.0",
         "glob": "^7.1.6",
         "husky": "^7.0.2",
