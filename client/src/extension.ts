@@ -1,6 +1,6 @@
 import * as vscode from "vscode";
 import * as path from "path";
-import { refreshExtension } from "./functions";
+import { refreshExtension, runLanguage } from "./functions";
 import { SidebarProvider } from "./providers/SidebarProvider";
 import {
     LanguageClient,
@@ -47,7 +47,7 @@ export const activate = (context: vscode.ExtensionContext) => {
         new SidebarProvider(context.extensionUri)
     );
 
-    context.subscriptions.push(sidebar, refreshExtension);
+    context.subscriptions.push(sidebar, refreshExtension, runLanguage);
 
     client.start();
 };

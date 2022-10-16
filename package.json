@@ -21,11 +21,25 @@
     ],
     "activationEvents": [
         "onCommand:jak-vscode-extension.refreshExtension",
+        "onCommand:jak-vscode-extension.runJonak",
         "onView:jak-vscode-extension-sidebar",
         "onLanguage:jonak"
     ],
     "main": "./client/dist/extension.js",
     "contributes": {
+        "configuration": {
+            "title": "Jonak",
+            "properties": {
+                "jak-vscode-extension.languagePath": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "default": null,
+                    "description": "Path for the Jonak Language"
+                }
+            }
+        },
         "viewsContainers": {
             "activitybar": [
                 {
@@ -50,6 +64,11 @@
             {
                 "command": "jak-vscode-extension.refreshExtension",
                 "title": "Refresh JAK VSCode Extension"
+            },
+            {
+                "command": "jak-vscode-extension.runJonak",
+                "title": "Run Jonak File!!",
+                "icon": "$(play)"
             }
         ],
         "languages": [
@@ -83,7 +102,15 @@
                 "scopeName": "source.jonak",
                 "path": "./client/language/syntax.tmLanguage.json"
             }
-        ]
+        ],
+        "menus": {
+            "editor/title/run": [
+                {
+                    "when": "config.jak-vscode-extension.languagePath",
+                    "command": "jak-vscode-extension.runJonak"
+                }
+            ]
+        }
     },
     "scripts": {
         "vscode:prepublish": "concurrently \"tsc -b\" \"rollup -c\"",
