@@ -5,11 +5,12 @@
     "fileTypes": ["jonak"],
     "patterns": [
         { "include": "#comments" },
-        { "include": "#function_parameters" },
+        { "include": "#integers" },
+        { "include": "#function_create" },
         { "include": "#variables_string" },
         { "include": "#variables_function" },
         { "include": "#strings" },
-        { "include": "#integers" },
+        { "include": "#punctuations" },
         { "include": "#functions" },
         { "include": "#keywords" }
     ],
@@ -34,35 +35,51 @@
             "match": "0-9",
             "name": "constant.numeric"
         },
+        "punctuations": {
+            "name": "keyword.control",
+            "match": "[!\"#$%&\\'()*+,\\-./:;<=>?@[\\\\]^`{\\|}~]+"
+        },
         "variables_string": {
             "name": "keyword.control",
-            "match": "\\s+?\\bVAR\\s+?([A-Za-z]+)\\s+?\\=\\s+?(\".*?\"|'.*?')",
+            "match": "\\bVAR\\s+([A-Za-z]+)[\\s]+(\\=)[\\s]+(\".*?\"|'.*?')",
             "captures": {
                 "1": {
                     "name": "variable"
                 },
                 "2": {
+                    "patterns": [{ "include": "#punctuations" }]
+                },
+                "3": {
                     "patterns": [{ "include": "#strings" }]
                 }
             }
         },
         "variables_function": {
             "name": "keyword.control",
-            "match": "\\s+?\\bVAR\\s+?([A-Za-z]+)\\s+?\\=\\s+?([A-Za-z_]+(\\([A-Za-z_,\\s]+\\)))",
+            "match": "\\bVAR\\s+([A-Za-z]+)[\\s]+(\\=)[\\s]+([A-Za-z_]+)\\(([A-Za-z_,\\s]+)\\)",
             "captures": {
                 "1": {
                     "name": "variable"
                 },
                 "2": {
+                    "patterns": [{ "include": "#punctuations" }]
+                },
+                "3": {
                     "name": "entity.name.function"
+                },
+                "4": {
+                    "name": "variable.parameter"
                 }
             }
         },
-        "function_parameters": {
-            "name": "entity.name.function",
-            "match": "[A-Za-z_]+\\s+?\\(([A-Za-z_,\\s]+)\\)",
+        "function_create": {
+            "name": "keyword.control",
+            "match": "\\bFUN\\s+([A-Za-z_]+)\\(([A-Za-z_,\\s]+)\\)",
             "captures": {
                 "1": {
+                    "name": "entity.name.function"
+                },
+                "2": {
                     "name": "variable.parameter"
                 }
             }
