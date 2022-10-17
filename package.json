@@ -5,7 +5,7 @@
     "publisher": "JAKVSCodeExtension",
     "displayName": "JAK VSCode Extension",
     "description": "A VSCode Extension made by JAK",
-    "icon": "media/logo.png",
+    "icon": "client/media/logo.png",
     "version": "2.0.0",
     "repository": {
         "type": "git",
