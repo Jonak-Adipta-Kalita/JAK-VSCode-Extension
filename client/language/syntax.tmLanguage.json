@@ -24,7 +24,7 @@
             "name": "entity.name.function"
         },
         "keywords": {
-            "match": "FUN|FOR|THEN|END|RETURN|TO|NULL|TRUE|FALSE|MATH_PI|VAR",
+            "match": "FUN|FOR|THEN|END|RETURN|TO|NULL|TRUE|FALSE|MATH_PI|VAR|IF|ELIF|ELSE",
             "name": "keyword.control"
         },
         "strings": {
