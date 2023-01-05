@@ -6,6 +6,7 @@
     "patterns": [
         { "include": "#comments" },
         { "include": "#integers" },
+        { "include": "#function_usage" },
         { "include": "#function_create" },
         { "include": "#variables_string" },
         { "include": "#variables_function" },
@@ -56,7 +57,7 @@
         },
         "variables_function": {
             "name": "keyword.control",
-            "match": "\\bVAR\\s+([A-Za-z]+)[\\s]+(\\=)[\\s]+([A-Za-z_]+)\\(([A-Za-z_,\\s]+)\\)",
+            "match": "\\bVAR\\s+([A-Za-z]+)[\\s]+(\\=)[\\s]+([A-Za-z_]+)\\(([A-Za-z_,\\s]+)(\".*?\"|'.*?')\\)",
             "captures": {
                 "1": {
                     "name": "variable"
@@ -65,10 +66,7 @@
                     "patterns": [{ "include": "#punctuations" }]
                 },
                 "3": {
-                    "name": "entity.name.function"
-                },
-                "4": {
-                    "name": "variable.parameter"
+                    "patterns": [{ "include": "#function_usage" }]
                 }
             }
         },
@@ -81,6 +79,21 @@
                 },
                 "2": {
                     "name": "variable.parameter"
+                }
+            }
+        },
+        "function_usage": {
+            "name": "keyword.control",
+            "match": "([A-Za-z_]+)\\(([A-Za-z_,\\s]+)(\".*?\"|'.*?')\\)",
+            "captures": {
+                "1": {
+                    "name": "entity.name.function"
+                },
+                "2": {
+                    "name": "variable.parameter"
+                },
+                "3": {
+                    "patterns": [{ "include": "#strings" }]
                 }
             }
         }
